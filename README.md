@@ -91,7 +91,11 @@ if __name__ == "__main__":
   CrearMatriz(matriz_1, matriz_2)                                              # Se llama la función para crear la matriz1
 ```
 **2.** Desarrolle un programa que permita realizar el producto de matrices. El programa debe validar las condiciones necesarias para ejecutar la operación.
-* EXPLICACIÓN
+* Primero creé una función para que el usuario ingresara el tamaño de sus matrices y los valores de esta, se efectua por medio de un for donde el ususario ingresa los valores de cada fila de la matriz. Luego se imprime el resultado de las dos matrices ingresadas. La condición para multiplicar matrices es que el número de columnas de la primera matriz sea igual al número de filas de la matriz 2, si es falso no se realizará ninguna operación, si es verdadero se llamará la función Producto.
+
+En la función Producto hay un for donde va tomando cada fila (con la longitud de la matriz1), un for anidado que va tomando cada columna y va añadiendo ceros para crear el tamaño de la nueva matriz. Hay otro for **FALTA** 
+
+En la función main se crean las matrices vacías y se llama la función de Crear matriz.
 * Mirar archivo Punto_2.py
 ```pseudocode
 def CrearMatriz(matriz_1, matriz_2):                                           # Para que el usuario cree la matriz
@@ -160,7 +164,11 @@ if __name__ == "__main__":
   CrearMatriz(matriz_1, matriz_2)                                              # Se llama la función para crear la matriz
 ```
 **3.** Desarrolle un programa que permita obtener la matriz transpuesta de una matriz ingresada. El programa debe validar las condiciones necesarias para ejecutar la operación.
-* EXPLICACIÓN
+* Primero creé una función para que el usuario ingresara el tamaño de sus matrices y los valores de esta, se efectua por medio de un for donde el ususario ingresa los valores de cada fila de la matriz. Luego se imprime el resultado de las dos matrices ingresadas. 
+
+En la función MatrizTrampuesta hay un for donde va tomando cada fila, hay un for donde empieza seleccionando las columnas, luego la fila y ubica el elemento en la ubicación pero invertida, se añade la fila invertida a la nueva matriz. Y se usa un for para imprimir la función transpuesta.
+
+En la función main se crean las matrices vacías y se llama la función de Crear matriz y Matriz Trampuesta.
 * Mirar archivo Punto_3.py
 ```pseudocode
 def CrearMatriz(matriz):                                                      # Para que el usuario cree la matriz
@@ -201,7 +209,11 @@ if __name__ == "__main__":
   MatrizTranspuesta(matriz, matriz_transpuesta)                               # Se llama la función para la matriz transpuesta
 ```
 **4.** Desarrollar un programa que sume los elementos de una columna dada de una matriz.
-* EXPLICACIÓN
+* Primero creé una función para que el usuario ingresara el tamaño de su matriz y los valores de esta, se efectua por medio de un for donde el ususario ingresa los valores de cada fila de la matriz. Luego se imprime el resultado de la matriz usando un for. 
+
+En la función SumaColumna, hay un for que se repite según el número de columnas, luego va tomando el valor de cada fila de la misma columna y añade los valores de la misma columna a una nueva lista. Hay otro for para sumar los elementos de esta lista y el resultado de la suma de cada columna se va imprimiendo.
+
+En la función main se crea la matriz vacías y se llama la función de Crear matriz y Suma columna.
 * Mirar archivo Punto_4.py
 ```pseudocode
 def CrearMatriz(matriz):                                                     # Para que el usuario cree la matriz
@@ -239,7 +251,11 @@ if __name__ == "__main__":
   SumaColumna(matriz)                                                       # Se llama la función para sumar las columnas
 ```
 **5.** Desarrollar un programa que sume los elementos de una fila dada de una matriz.
-* EXPLICACIÓN
+* Primero creé una función para que el usuario ingresara el tamaño de su matriz y los valores de esta, se efectua por medio de un for donde el ususario ingresa los valores de cada fila de la matriz. Luego se imprime el resultado de la matriz usando un for. 
+
+En la función Suma fila, hay un for que se repite según el número de filas, luego va tomando los valores de cada fila y los suma; el resultado de la suma de cada fila se va imprimiendo.
+
+En la función main se crea la matriz vacías y se llama la función de Crear matriz y Suma Fila.
 * Mirar archivo Punto_5.py
 ```pseudocode
 def CrearMatriz(matriz):                                                     # Para que el usuario cree la matriz
