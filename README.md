@@ -3,7 +3,12 @@
 * Mirar archivo Reto11.ipynb
   
 **1.** Desarrolle un programa que permita realizar la suma/resta de matrices. El programa debe validar las condiciones necesarias para ejecutar la operación.
-* EXPLICACIÓN
+* Primero creé una función para que el usuario ingresara el tamaño de sus matrices y los valores de esta, se efectua por medio de un for donde el ususario ingresa los valores de cada fila de la matriz. Luego se imprime el resultado de las dos matrices ingresadas. La condición para sumar y/o restar matrices es que el tamaño de las filas y columnas deben ser iguales en ambas, por esta razón, creé un condicional donde se evalua si el número de filas y columnas es igual en ambas de ser falso, no se realizará ninguna operación, de ser verdadero se le pregunta al usuario que operación quiere realizar, debe ingresar SUMAR o RESTAR. Hay un condicional anidado donde si ingresan 'sumar' se llama la función suma y si se ingresa 'restar' se llama la función resta.
+
+En la función Suma hay un for donde va tomando cada fila, luego elige posición x y toma el valor de la matriz 1 y matriz 2 de la misma posición y los suma, luego se añade a la fila de la nueva matriz resultante y se añade a la matriz. Hay otro for para imprimir la matriz resultante. En la función de Resta sucede lo mismo que la función Suma pero en vez de sumar los valores, estos se restan.
+
+En la función main se crean las matrices vacías y se llama la función de Crear matriz.
+
 * Mirar archivo Punto_1.py
 ```pseudocode
 def CrearMatriz(matriz_1, matriz_2):                                           # Para que el usuario cree la matriz
