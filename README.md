@@ -93,7 +93,7 @@ if __name__ == "__main__":
 **2.** Desarrolle un programa que permita realizar el producto de matrices. El programa debe validar las condiciones necesarias para ejecutar la operación.
 * Primero creé una función para que el usuario ingresara el tamaño de sus matrices y los valores de esta, se efectua por medio de un for donde el ususario ingresa los valores de cada fila de la matriz. Luego se imprime el resultado de las dos matrices ingresadas. La condición para multiplicar matrices es que el número de columnas de la primera matriz sea igual al número de filas de la matriz 2, si es falso no se realizará ninguna operación, si es verdadero se llamará la función Producto.
 
-En la función Producto hay un for donde va tomando cada fila (con la longitud de la matriz1), un for anidado que va tomando cada columna y va añadiendo ceros para crear el tamaño de la nueva matriz. Hay otro for **FALTA** 
+En la función Producto hay un for donde va tomando cada fila (con la longitud de la matriz1), un for anidado que va tomando cada columna y va añadiendo ceros para crear el tamaño de la nueva matriz. Hay otro for que va seleccionando la posición de cada elemento de las matrices. Hay otro for para imprimir las matrices con forma de matriz.
 
 En la función main se crean las matrices vacías y se llama la función de Crear matriz.
 * Mirar archivo Punto_2.py
